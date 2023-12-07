@@ -73,3 +73,5 @@ export default function App() {
 // REACT DEV TOOLS (download react dev tools browser extension)
 // components tab: shows component tree. Shows hooks and all that stuff as well. We can change state and hook values in the component tree and stuff.
 // also profiler tab and other stuff
+// if you change state in one component, it won't change the states in the other components. (unless global and stuff lol) but yeah.
+// practical guidelines for state: use state for variables that need to change over time. If you need something to be dynamic, you can have a state variable for that - like with modal windows opening and closing. Update state (like in event handler) to change the way a component to use. DON'T use state for variables that DON'T NEED TO TRIGGER COMPONENT RE-RENDERS - THERE WILL BE SOME VARIABLES THAT DON'T NEED STATE.
